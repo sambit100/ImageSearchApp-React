@@ -25,7 +25,7 @@ const Searchfield = () => {
         <input type="text" 
         value={search} onChange={(e)=>{setSearch(e.target.value)}}
         className='bg-gray-50 border  border-gray-300 text-sm w-full indent-2 p-2.5 outline-none focus:border-blud-500 focus:ring-2 rounded-tl rounded-bl' 
-        
+         placeholder='search anything'
         onKeyDown={handleSearchdown}
         />
            
