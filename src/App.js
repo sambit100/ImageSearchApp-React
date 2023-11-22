@@ -8,7 +8,7 @@ import { createContext, useState } from 'react';
 export const ImageContext = createContext();
 function App() {
   const [searchImg,setSearchImg]=useState('');
-  const{response,isLoading,error,fetchData }=useAxios(`search/photos?page=1&query=rabbit&client_id=${process.env.REACT_APP_ACCESS_KEY}`);
+  const{response,isLoading,error,fetchData }=useAxios(`search/photos?page=1&query=${searchImg}&client_id=${process.env.REACT_APP_ACCESS_KEY}`);
   // console.log(response)
   const value ={
     response,
